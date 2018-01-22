@@ -9,8 +9,9 @@ package net.virous.adsplash.config;
  */
 public interface BaseConfig {
 
+    String BASEFLODER="adsplash";
     String ISADDOWNLOAD = "addownloadfinish";
-    String ADFILE = "newYearGreeting";
+    String ADFILE = "adFile";
     String PACKAGE_NAME = "net.virous.adsplash";
 
 
@@ -19,7 +20,7 @@ public interface BaseConfig {
             "        \"duration\": \"10\", \n" +
             "        \"show_type\": \"0\", \n" +
             "        \"is_use_normal\": \"1\", \n" +
-            "        \"normal_show_url\": \"http://www.yishengdaojia.com:8084/common/p1.jpg\", \n" +
+            "        \"normal_show_url\": \"https://raw.githubusercontent.com/ccclll1990/ADSplash/master/imgs/p1.jpg\", \n" +
             "        \"target_type\": \"1\", \n" +
             "        \"target_obj\": \"http://www.baidu.com\"\n" +
             "}";
@@ -29,7 +30,7 @@ public interface BaseConfig {
             "        \"duration\": \"10\", \n" +
             "        \"show_type\": \"1\", \n" +
             "        \"is_use_normal\": \"1\", \n" +
-            "        \"normal_show_url\": \"http://www.yishengdaojia.com:8084/common/gif2.gif\", \n" +
+            "        \"normal_show_url\": \"https://raw.githubusercontent.com/ccclll1990/ADSplash/master/imgs/g1.gif\", \n" +
             "        \"target_type\": \"1\", \n" +
             "        \"target_obj\": \"http://www.baidu.com\"\n" +
             "}";
@@ -39,7 +40,7 @@ public interface BaseConfig {
             "        \"duration\": \"10\", \n" +
             "        \"show_type\": \"2\", \n" +
             "        \"is_use_normal\": \"1\", \n" +
-            "        \"normal_show_url\": \"http://www.yishengdaojia.com:8084/common/v3.mp4\", \n" +
+            "        \"normal_show_url\": \"https://raw.githubusercontent.com/ccclll1990/ADSplash/master/imgs/video1.mp4\", \n" +
             "        \"target_type\": \"1\", \n" +
             "        \"target_obj\": \"http://www.baidu.com\"\n" +
             "}";

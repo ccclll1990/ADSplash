@@ -15,10 +15,8 @@ import net.virous.adsplash.modle.AdInfo;
 
 public class SplashActivity extends Activity implements BaseConfig {
 
-
     Handler mHandler = new Handler();
     SplashHandler splashhandler;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -55,7 +53,10 @@ public class SplashActivity extends Activity implements BaseConfig {
         if (isDownload.equals("1") && adInfo != null && adInfo.isShow()) {
             mHandler.removeCallbacks(splashhandler);
 
-            startActivity(new Intent(SplashActivity.this,ADActivity.class));
+            Intent intent = new Intent(SplashActivity.this,ADActivity.class);
+            intent.putExtra("AdInfo",adInfo);
+            startActivity(intent);
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             SplashActivity.this.finish();
         }
 

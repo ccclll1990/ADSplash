@@ -6,7 +6,7 @@
     </style>
 
     <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
-        <item name="android:windowBackground">@mipmap/p1</item>
+        <item name="android:windowBackground">@mipmap/p2</item>
     </style>
 
 </resources>

@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
+    android:id="@+id/ad_main_rl"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.virous.adsplash.ADActivity">
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:id="@+id/ad_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/ad_img_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/p2"
+            android:visibility="gone"
+        />
+
+        <net.virous.adsplash.view.CustomVideoView
+            android:id="@+id/ad_video_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+        />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/ad_gif_giv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_skip_rl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/ad_skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="跳过
+9s"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
