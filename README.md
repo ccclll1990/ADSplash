@@ -6,4 +6,6 @@
  
     
     
- 流程图：![有帮助的截图](/imgs/flowchart.jpg)
+ 流程图([processon](http://example.net/))：![流程图](/imgs/flowchart.jpg)
+ 
+
