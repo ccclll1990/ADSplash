@@ -1,5 +1,5 @@
 # ADSplash
-    Android Splash页广告Demo, 支持Jpg, Gif ,Video
+    Android Splash页广告Demo, 支持Jpg  Gif Video
     
     基本完成
     
